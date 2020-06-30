@@ -1,0 +1,56 @@
+#name {
+      text-align: center;
+      font-family: 'Delius Swash Caps', cursive;
+}
+
+#myimg {
+      display: block;
+      border: 5px solid red;
+      text-align: center;
+      filter: drop-shadow(8px 8px 10px gray);
+      width: 21vw;
+      height: 21vw;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+#myimg:hover {
+      cursor: pointer;
+      border: 2px solid green;
+}
+
+a:hover {
+      text-decoration: none;
+}
+
+.heading {
+      font-family: 'Patrick Hand', cursive;
+      text-align: center;
+}
+
+#footer {
+      background-color: chartreuse;
+      text-align: center;
+      padding: 15px;
+}
+
+i {
+      width: 2vw;
+}
+
+#linkedin i:hover {
+      color: rgb(0, 119, 181);
+}
+
+#facebook i:hover {
+      color: rgb(0, 120, 255);
+}
+
+#instagram i:hover {
+      color: transparent;
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      background-clip: text;
+      -webkit-background-clip: text;
+}
