@@ -1,3 +1,9 @@
+
+body {
+      background: linear-gradient(to right,black,white);
+            color: white;
+}
+
 #name {
       text-align: center;
       font-family: 'Delius Swash Caps', cursive;
@@ -13,11 +19,13 @@
       border-radius: 50%;
       margin-left: auto;
       margin-right: auto;
+      transition: transform 3s;
 }
 
 #myimg:hover {
       cursor: pointer;
       border: 2px solid green;
+      transform: rotate3d(1,1,0,360deg);
 }
 
 a:hover {
@@ -35,22 +43,28 @@ a:hover {
       padding: 15px;
 }
 
-i {
-      width: 2vw;
+
+.icon {
+      width: 50px;
 }
 
-#linkedin i:hover {
-      color: rgb(0, 119, 181);
+iframe {
+      padding-left: 20vw;
 }
 
-#facebook i:hover {
-      color: rgb(0, 120, 255);
-}
+@media screen and (max-width:992px) {
+      #name{
+            font-size: 36px;
+      }
 
-#instagram i:hover {
-      color: transparent;
-      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-      background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-      background-clip: text;
-      -webkit-background-clip: text;
+      .heading {
+            font-size: 24px;
+      }
+      *{
+            font-size: 12px;
+      }
+
+      .icon {
+            width: 30px;
+      }
 }
