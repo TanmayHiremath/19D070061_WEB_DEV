@@ -12,10 +12,13 @@
       <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
       <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
       <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+      <button id="scrollBtn" title="Go to top">
+            &#5169;</button>
       <nav class="navbar navbar-expand-md bg-dark navbar-dark">
             <!-- Brand -->
             <a class="navbar-brand" class="font-weight-bold" href="">Tanmay</a>
@@ -107,9 +110,28 @@
                         src="images/linkedin .svg" alt="Hey!looks like the image couldn't load"></a>
             <a href="https://github.com/TanmayHiremath/" id="github" class="p-3"><img class="icon"
                         src="images/github.svg" alt="Hey!looks like the image couldn't load"></a>
+
+            <script>
+                  $(document).scroll(function () {
+                        if ($(window).scrollTop() > 100) {
+                              document.getElementById("scrollBtn").style.display = "block";
+                              
+                        } else {
+                              document.getElementById("scrollBtn").style.display = "none";
+                        }
+
+
+                  });
+                  $("#scrollBtn").click(function () {
+                        $('html, body').animate({
+                              scrollTop: 0
+                        }, 1000, 'easeInOutExpo');
+                  });
+            </script>
       </div>
 
 
 </body>
+
 
 </html>
